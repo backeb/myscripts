@@ -14,17 +14,17 @@ Change Log: <Date: Author - Comment>
 def inpolygon(polypts, lon_in, lat_in) :
     """
     return a vector containing 1s/0s indicating True/False for lon/lat points inside defined polygon
-    
+
     USAGE
     inpoly = inpolygon(polypts, lon_in, lat_in)
-   
+
     INPUT
-    polypts     =   polygon points, make sure that you close the polygon, 
+    polypts     =   polygon points, make sure that you close the polygon,
                     i.e. your last lon/lat pair = first lon/lat pair.
                     e.g. polypts = [(lon1,lat1),(lon2,lat2),(lon3,lat3),...,(lon1,lat1)]
     lon_in      =   input longitude vector
     lat_in      =   input latitude vector
-    
+
     OUTPUT
     inpoly	=   vector containing 1s and 0s indicating True/False for lon/lat points inside defined polygon
     """
