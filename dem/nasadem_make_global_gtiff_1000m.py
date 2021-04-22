@@ -15,14 +15,14 @@ start = time.time()
 #fileList = '/p/input/scripts/additionalInput/nasadem/NASADEMTilesFileList.txt'
 #
 # define some parameters to get 1 global watermask GeoTIFF
-target_xres = 0.000833333333333 # 90m
-target_yres = 0.000833333333333 # 90m, note both target_res have to be positive values
-mask = "/p/input/merit-90m/MERIT_90m.tif"
-outFile = '/p/input/scripts/additionalInput/nasadem/global/NASADEM_90m.tif'
-#target_xres = 0.01 # 1000m
-#target_yres = 0.01 # 1000m, note both target_res have to be positive values
-#mask = "/p/input/merit-90m/MERIT_1000m.tif"
-#outFile = '/p/input/scripts/additionalInput/nasadem/global/NASADEM_1000m.tif'
+#target_xres = 0.000833333333333 # 90m
+#target_yres = 0.000833333333333 # 90m, note both target_res have to be positive values
+#mask = "/p/input/merit-90m/MERIT_90m.tif"
+#outFile = '/p/input/scripts/additionalInput/nasadem/global/NASADEM_90m.tif'
+target_xres = 0.01 # 1000m
+target_yres = 0.01 # 1000m, note both target_res have to be positive values
+mask = "/p/input/merit-90m/MERIT_1000m.tif"
+outFile = '/p/input/scripts/additionalInput/nasadem/global/NASADEM_1000m.tif'
 
 # don't change the below
 xmin = -180.0004167 # MERIT_90m.tif and MERIT_1000m.tif xmin
