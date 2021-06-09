@@ -1,5 +1,3 @@
-#import xarray as xr
-#import numpy as np
 import os
 from osgeo import gdal
 import time
@@ -8,10 +6,6 @@ start = time.time()
 
 inDir = "/p/input/water-mask/"
 outDir = "/p/input/scripts/additionalInput/water-mask/tiles/"
-
-# get info from 1 file
-# fname = inDir+"occurrence_20E_30Sv1_1_2019.tif"
-# os.system('gdalinfo %s'%(fname))
 
 for entry in os.scandir(inDir):
     if (entry.path.endswith(".tif") and entry.is_file()):
