@@ -26,7 +26,7 @@ startTime = datetime.now()
 
 # here we set the domain we want 
 # [lon-lower-left-corner, lon-upper-right-corner, lat-lower-left-corner, lat-upper-right-corner]
-domain = [0, 60, -50, -10]
+domain = [53, 60, -44, -35]
 
 
 # here we fetch the latest GFS forcest and write ugrd10m and vgrd10m to u and v
