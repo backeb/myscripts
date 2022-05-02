@@ -14,7 +14,7 @@ mpath = 'C:\\Users\\backeber\\OneDrive - Stichting Deltares\\Desktop\\Project-D-
 
 fnames = [f for f in listdir(fpath) if isfile(join(fpath, f))]
 
-with imageio.get_writer(mpath+'movie.gif', mode='I', duration=0.25) as writer:
+with imageio.get_writer(mpath+'movie.gif', mode='I', duration=0.2) as writer:
     for filename in fnames:
         image = imageio.imread(fpath+filename)
         writer.append_data(image)
