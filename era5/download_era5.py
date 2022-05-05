@@ -27,7 +27,7 @@ def download_era5(longitude_min, longitude_max, latitude_min, latitude_max, date
     yearstr = []
     if datetime.strptime(date_min, '%Y-%m-%d').year == datetime.strptime(date_max, '%Y-%m-%d').year:
         i = datetime.strptime(date_min, '%Y-%m-%d').year
-        yearstr.append(f'{i:0>2}')
+        yearstr.append(f'{i}')
     else:
         for i in range(datetime.strptime(date_min, '%Y-%m-%d').year, datetime.strptime(date_max, '%Y-%m-%d').year, 1):
             yearstr.append(f'{i}')
