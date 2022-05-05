@@ -47,7 +47,7 @@ def download_era5(longitude_min, longitude_max, latitude_min, latitude_max, date
     else:
         for i in range(datetime.strptime(date_min, '%Y-%m-%d').day, datetime.strptime(date_max, '%Y-%m-%d').day, 1):
             daystr.append(f"{i:0>2}")
-
+    # here we use the CDS API to download the data
     c.retrieve(
         'reanalysis-era5-single-levels',
         {
