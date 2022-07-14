@@ -15,5 +15,3 @@ do
    ncks -A -v lat,lon $i innovation_${i:9:5}.nc
 
 done
-
-
