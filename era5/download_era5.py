@@ -16,7 +16,7 @@ import xarray as xr
 def get_era5_single_levels(longitude_min, longitude_max, latitude_min, latitude_max, date_min, date_max, vars, outdir):
 	c = cdsapi.Client()
 	# here we make the strings to use in the api 
-	areastr = [str(longitude_min)+'/'+str(latitude_min)+'/'+str(longitude_max)+'/'+str(latitude_max)]
+	areastr = [str(latitude_max)+'/'+str(longitude_min)+'/'+str(latitude_min)+'/'+str(longitude_max)]
 	vars = list(vars) # convert tuple to list for cdsapi
 	#make the /data/era5 directory if it does not exist
 	Path(outdir+'/era5/tmp').mkdir(parents=True, exist_ok=True)
