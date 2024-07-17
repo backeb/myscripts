@@ -57,6 +57,8 @@ import xarray as xr # note dependencies: dask, netCDF4
 				'si'),
 		show_default=True)
 
+# this is an example commit
+
 def runcommand(username, password, longitude_min, longitude_max, latitude_min, latitude_max, date_min, date_max, vars):
 	#make the /data/tmp directory if it does not exist
 	Path('/data/cmems/tmp').mkdir(parents=True, exist_ok=True)
